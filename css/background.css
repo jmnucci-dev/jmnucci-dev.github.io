@@ -1,0 +1,10 @@
+.bg-ambient{position:fixed;inset:0;z-index:-3;pointer-events:none;overflow:hidden}
+.bg-blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.4;will-change:transform}
+.bg-blob-a{width:560px;height:560px;left:-140px;top:-100px;background:radial-gradient(circle,var(--accent-glow),transparent 70%);animation:bg-float-a 34s ease-in-out infinite}
+.bg-blob-b{width:660px;height:660px;right:-180px;top:26%;background:radial-gradient(circle,rgba(165,166,255,.16),transparent 70%);animation:bg-float-b 42s ease-in-out infinite}
+.bg-blob-c{width:540px;height:540px;left:16%;bottom:-260px;background:radial-gradient(circle,var(--accent-glow),transparent 72%);animation:bg-float-c 38s ease-in-out infinite}
+@keyframes bg-float-a{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(90px,60px) scale(1.15)}}
+@keyframes bg-float-b{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-80px,55px) scale(.9)}}
+@keyframes bg-float-c{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(65px,-75px) scale(1.1)}}
+#bg-circuit{position:fixed;inset:0;z-index:-2;pointer-events:none;will-change:transform}
+@media(prefers-reduced-motion:reduce){.bg-blob{animation:none}#bg-circuit{transform:none!important}}

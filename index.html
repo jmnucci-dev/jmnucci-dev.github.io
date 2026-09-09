@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="JM, developer portfolio. Systems, games and software.">
+<title>jmnucci.dev · JM / Syyst3m</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/background.css">
+<link rel="stylesheet" href="css/cursor.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<header class="topbar">
+  <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  <button class="brand brand-button" data-scroll="hero">jmnucci.dev</button>
+  <div class="topbar-right">
+    <button class="topbar-action" id="newTerminalBtn" type="button" aria-label="Open a new terminal"><span class="cp-icon">&gt;_</span><span class="topbar-action-label">New Terminal</span></button>
+    <button class="cmdk-hint" id="cmdkHint" type="button" aria-label="Open command palette"><span class="cp-icon">⌕</span> Go to… <kbd>Ctrl</kbd><kbd>K</kbd></button>
+    <div class="topbar-status"><span class="status-dot"></span>Available</div>
+  </div>
+</header>
+
+<aside class="sidebar" id="sidebar">
+  <div class="explorer-title">EXPLORER</div>
+  <button class="explorer-root" data-scroll="hero"><span>⌄</span> JMNUCCI.DEV</button>
+
+  <nav class="explorer-nav" aria-label="Main navigation">
+    <button class="nav-item" data-scroll="hero"><span>○</span> Home</button>
+    <button class="nav-item" data-scroll="what-i-do"><span>○</span> What I Do</button>
+
+    <button class="nav-item nav-folder" data-folder="projects" data-folder-scroll="work"><span class="nav-chevron">›</span> Projects</button>
+    <div class="folder-content project-folder" id="folder-projects">
+      <button class="folder-summary" data-open-all-projects><span>▱</span> All Projects</button>
+      <div id="project-tree"></div>
+    </div>
+
+    <button class="nav-item nav-folder" data-folder="knowledge" data-folder-scroll="knowledge"><span class="nav-chevron">›</span> Knowledge</button>
+    <div class="folder-content knowledge-folder" id="folder-knowledge">
+      <button data-open-knowledge="overview"><span>□</span> Overview</button>
+      <button data-open-knowledge="programming"><span>□</span> Programming</button>
+      <button data-open-knowledge="roblox"><span>□</span> Roblox</button>
+      <button data-open-knowledge="web"><span>□</span> Web</button>
+    </div>
+
+    <button class="nav-item" data-scroll="about"><span>○</span> About</button>
+    <button class="nav-item" data-scroll="experience"><span>○</span> Experience</button>
+    <button class="nav-item" data-scroll="workflow"><span>○</span> Workflow</button>
+    <button class="nav-item" data-scroll="contact"><span>○</span> Contact</button>
+  </nav>
+
+  <div class="sidebar-footer"><span class="sidebar-line"></span><span>LF</span><span>UTF-8</span><span>2026</span></div>
+</aside>
+
+<main class="content">
+  <section class="hero" id="hero">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">DEVELOPER / BUILDER</p>
+      <h1>Sup, I'm <span>JM.</span><span class="type-cursor" aria-hidden="true"></span></h1>
+      <p class="hero-alias">You might know me as <strong>Syyst3m.</strong></p>
+      <p class="hero-description">I build systems, games and software, with a thing for clean architecture and figuring out how stuff works.</p>
+      <div class="hero-actions">
+        <button class="button button-primary" data-scroll="work">Explore my work <span>→</span></button>
+        <a class="button button-ghost" href="https://github.com/jmnucci-dev" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+      </div>
+    </div>
+    <div class="hero-projects reveal reveal-delay">
+      <article class="floating-project project-back">
+        <div class="project-preview" data-showcase-target data-showcase-project="Movement System"></div>
+        <div class="floating-project-info" data-project-open="Movement System" tabindex="0" role="button"><div><span class="project-kicker">SYSTEM</span><h3>Movement System</h3></div><span class="mini-arrow">↗</span></div>
+      </article>
+      <article class="floating-project project-front">
+        <div class="project-preview" data-showcase-target data-showcase-project="Weapon System"></div>
+        <div class="floating-project-info" data-project-open="Weapon System" tabindex="0" role="button"><div><span class="project-kicker">FEATURED SYSTEM</span><h3>Weapon System</h3></div><span class="mini-arrow">↗</span></div>
+      </article>
+    </div>
+    <button class="scroll-hint" data-scroll="what-i-do">Scroll to explore <span>↓</span></button>
+  </section>
+
+  <section class="section" id="what-i-do">
+    <div class="section-heading reveal"><div><p class="section-label">WHAT I DO</p><h2>I like building things that actually work.</h2></div></div>
+    <div class="focus-list">
+      <article class="focus-row reveal">
+        <span class="focus-glyph" aria-hidden="true">▦</span>
+        <div class="focus-body">
+          <div class="focus-row-head"><h3>Systems</h3><div class="focus-tags"><span>Architecture</span><span>Networking</span><span>OOP</span></div></div>
+          <p>Modular gameplay systems, architecture, networking, data and the logic that keeps everything together.</p>
+        </div>
+      </article>
+      <article class="focus-row reveal">
+        <span class="focus-glyph" aria-hidden="true">✦</span>
+        <div class="focus-body">
+          <div class="focus-row-head"><h3>Game Development</h3><div class="focus-tags"><span>Roblox</span><span>Luau</span><span>Physics</span></div></div>
+          <p>Gameplay, movement, combat, physics, UI and the small pieces that make a game feel alive.</p>
+        </div>
+      </article>
+      <article class="focus-row reveal">
+        <span class="focus-glyph" aria-hidden="true">⌬</span>
+        <div class="focus-body">
+          <div class="focus-row-head"><h3>Software</h3><div class="focus-tags"><span>Python</span><span>Flask</span><span>SQL</span></div></div>
+          <p>Web applications, APIs, data handling and practical software built around a real problem.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <div class="section-heading reveal"><div><p class="section-label">SELECTED WORK</p><h2>A few things I've built.</h2><p class="section-intro">The homepage only keeps the projects that deserve attention first. Open the full project tree to browse everything.</p></div></div>
+    <article class="featured-project reveal">
+      <div class="featured-media" data-showcase-target data-showcase-project="Weapon System"></div>
+      <div class="featured-content"><span class="project-kicker">FEATURED</span><h3>Weapon System</h3><p>A modular Roblox weapon framework focused on clean separation, server validation and responsive gameplay.</p><div class="tech-list"><span>Luau</span><span>OOP</span><span>Typed Luau</span><span>Blink</span><span>Raycast</span></div><div class="project-details"><div><small>CHALLENGE</small><strong>Lag compensation</strong></div><div><small>STATE</small><strong>Almost complete</strong></div></div><button class="text-link" data-project="Weapon System">Open project <span>→</span></button></div>
+    </article>
+    <div class="work-grid" id="selected-work-grid"></div>
+    <div class="section-cta reveal"><button class="button button-ghost" data-open-all-projects>View all projects <span>→</span></button></div>
+  </section>
+
+  <section class="section" id="knowledge">
+    <div class="section-heading reveal"><div><p class="section-label">KNOWLEDGE</p><h2>What I know, and where I'm going next.</h2><p class="section-intro">A compact overview lives here. The deeper breakdowns open as workspace pages, so the homepage stays readable.</p></div></div>
+    <div class="knowledge-list">
+      <button class="knowledge-row reveal" data-open-knowledge="programming"><div class="knowledge-body"><div class="knowledge-row-head"><span class="knowledge-file">programming.notes</span><h3>Programming</h3></div><p>Luau and Python are the languages I use most. HTML/CSS, SQL, C++ and JavaScript fill in the rest of the stack.</p></div>
+        <span class="text-link">Open notes <span>→</span></span>
+      </button>
+      <button class="knowledge-row reveal" data-open-knowledge="roblox"><div class="knowledge-body"><div class="knowledge-row-head"><span class="knowledge-file">roblox.notes</span><h3>Roblox / Game Dev</h3></div><p>Architecture, client/server, networking, physics, CFrame, AI, animation and reusable gameplay systems.</p></div>
+        <span class="text-link">Open notes <span>→</span></span>
+      </button>
+      <button class="knowledge-row reveal" data-open-knowledge="web"><div class="knowledge-body"><div class="knowledge-row-head"><span class="knowledge-file">web.notes</span><h3>Web / Data</h3></div><p>Flask, Jinja2, REST APIs, JSON, caching, MySQL and SQL Server, with a practical backend-first mindset.</p></div>
+        <span class="text-link">Open notes <span>→</span></span>
+      </button>
+    </div>
+    <aside class="knowledge-tools reveal"><span class="project-kicker">TOOLS</span><h3>The toolbox</h3><div class="knowledge-tags"><span>VS Code</span><span>Roblox Studio</span><span>Rojo</span><span>Git</span><span>GitHub</span><span>Figma</span><span>Visual Studio</span></div><p>Tools matter, but I prefer showing the systems built with them.</p></aside>
+    <div class="learning-strip reveal"><div><span class="project-kicker">CURRENTLY LEARNING</span><strong>Advanced Typed Luau · security · physics/CFrame · C++ · JavaScript · Git workflows</strong></div><button class="button button-ghost" data-open-knowledge="programming">Open knowledge <span>↗</span></button></div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="section-heading reveal"><div><p class="section-label">ABOUT</p><h2>Curiosity is usually where the project starts.</h2></div></div>
+    <div class="about-grid"><div class="about-copy reveal"><p>I started programming because I wanted to understand how things worked. That turned into building systems, games, websites and a lot of experiments along the way.</p><p>Most of my work has been around Roblox and gameplay systems, but I also enjoy backend, web development, databases and learning lower-level concepts.</p><p>I care a lot about code that can be changed later without becoming a nightmare. If something is hard to maintain, that's usually a problem I want to solve.</p></div><div class="about-facts reveal"><div><span>STARTED</span><strong>2022</strong></div><div><span>FOCUS</span><strong>Systems & Software</strong></div><div><span>WORK STYLE</span><strong>Build → Test → Fix</strong></div><div><span>ALIAS</span><strong>Syyst3m</strong></div></div></div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-heading reveal"><div><p class="section-label">EXPERIENCE</p><h2>Built outside tutorials, too.</h2></div></div>
+    <div class="experience-card reveal"><div class="experience-marker"><span></span></div><div><span class="project-kicker">INDEPENDENT DEVELOPER</span><h3>Commissions · Private Projects · Team Work</h3><p>I've worked on commissioned projects, private systems and collaborative projects, including maintaining and improving code that I didn't originally write.</p><div class="experience-points"><span>Paid development</span><span>Existing codebases</span><span>Systems architecture</span><span>Debugging</span></div></div></div>
+  </section>
+
+  <section class="section" id="workflow">
+    <div class="section-heading reveal"><div><p class="section-label">WORKFLOW</p><h2>Tools change. The way I solve problems stays pretty simple.</h2><p class="section-intro">AI is one tool inside the process, not the process itself.</p></div></div>
+    <div class="workflow-content reveal">
+      <div class="workflow-steps"><div><strong>Find the problem</strong></div><div><strong>Research</strong></div><div><strong>Build a direction</strong></div><div><strong>Test it</strong></div><div><strong>Debug & simplify</strong></div><div><strong>Ship what works</strong></div></div>
+      <div class="workflow-note">
+        <p>I use AI for research, debugging, refactoring, boilerplate and exploring approaches. I still read the output, test it, reshape it around the architecture and replace it when it's wrong. It's a tool in the process, not a replacement for understanding the code.</p>
+        <div class="ai-usage-panel">
+          <div class="ai-usage-head"><span class="project-kicker">AI TOOLS</span><span class="ai-usage-note">used deliberately</span></div>
+          <div class="ai-usage-list">
+            <div class="ai-usage-row"><span class="ai-usage-name">ChatGPT</span><span class="ai-usage-tag">Research & exploring approaches</span></div>
+            <div class="ai-usage-row"><span class="ai-usage-name">Claude</span><span class="ai-usage-tag">Refactoring & boilerplate</span></div>
+            <div class="ai-usage-row"><span class="ai-usage-name">Gemini</span><span class="ai-usage-tag">Debugging & second opinions</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact"><div class="contact-card reveal"><p class="section-label">HAVE SOMETHING IN MIND?</p><h2>Let's build something.</h2><p>Got a project, a system that needs building, or just want to talk development?</p><div class="contact-actions"><a class="button button-primary" href="mailto:jmnucci.dev@gmail.com">Email me <span>↗</span></a><button class="button button-ghost" type="button" data-copy="syyst3m">Discord <span>Copy</span></button></div>
+    <div class="social-links">
+      <a class="social-link" href="https://github.com/jmnucci-dev" target="_blank" rel="noopener"><img src="assets/socials/github.png" alt="" loading="lazy" onerror="this.remove()"><span>GitHub</span></a>
+      <a class="social-link" href="https://www.linkedin.com/in/jmnucci/" target="_blank" rel="noopener"><img src="assets/socials/linkedin.png" alt="" loading="lazy" onerror="this.remove()"><span>LinkedIn</span></a>
+      <button class="social-link" type="button" data-copy="syyst3m"><img src="assets/socials/discord.png" alt="" loading="lazy" onerror="this.remove()"><span>Discord</span></button>
+      <a class="social-link" href="mailto:jmnucci.dev@gmail.com"><img src="assets/socials/email.png" alt="" loading="lazy" onerror="this.remove()"><span>Email</span></a>
+      <a class="social-link" href="https://www.roblox.com/users/profile?username=Syyst3m" target="_blank" rel="noopener"><img src="assets/socials/roblox.png" alt="" loading="lazy" onerror="this.remove()"><span>Roblox · Syyst3m</span></a>
+    </div>
+  </div></section>
+  <footer class="footer"><div><strong>jmnucci.dev</strong> <span>/</span> Syyst3m</div><div class="footer-status"><span class="status-dot"></span> Available <span>·</span> UTF-8 <span>·</span> LF <span>·</span> 2026</div></footer>
+</main>
+
+<div class="workspace-tabbar" id="workspaceTabbar">
+  <div class="workspace-tabs" id="workspaceTabs" role="tablist" aria-label="Open pages"></div>
+  <button class="workspace-close" id="closeWorkspace" aria-label="Close all tabs">×</button>
+</div>
+
+<div class="project-workspace" id="projectWorkspace" aria-hidden="true">
+  <div class="project-views" id="projectViews"></div>
+  <div class="workspace-status-bar" id="workspaceStatusBar">
+    <div class="status-left"><span class="status-branch">⎇ main</span><span id="statusBreadcrumb">—</span></div>
+    <div class="status-right"><span id="statusLang">—</span><span>UTF-8</span><span>LF</span></div>
+  </div>
+</div>
+
+<div class="command-palette" id="commandPalette" aria-hidden="true">
+  <div class="command-palette-backdrop" data-cp-close></div>
+  <div class="command-palette-box" role="dialog" aria-modal="true" aria-label="Command palette">
+    <div class="command-palette-input-row">
+      <span class="cp-icon">›</span>
+      <input type="text" id="commandPaletteInput" placeholder="Go to a project, page or section…" autocomplete="off" spellcheck="false">
+      <span class="cp-kbd">ESC</span>
+    </div>
+    <div class="command-palette-results" id="commandPaletteResults"></div>
+  </div>
+</div>
+
+<script src="js/background.js"></script>
+<script src="js/cursor.js"></script>
+<script src="projects/registry.js"></script>
+<script src="projects/Weapon%20System/config.js"></script>
+<script src="projects/Movement%20System/config.js"></script>
+<script src="projects/Orb%20Rush/config.js"></script>
+<script src="projects/Pokedex/config.js"></script>
+<script src="projects/Combat%20System/config.js"></script>
+<script src="projects/Volleyball%20System/config.js"></script>
+<script src="projects/Inventory%20System/config.js"></script>
+<script src="js/core.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/workspace.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/command-palette.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

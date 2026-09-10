@@ -69,6 +69,7 @@
     isDown = true;
     if (hoverTarget) {
       frame.classList.add('cx-hit');
+      dot.classList.add('cx-hit');
       spawnRipple(mouseX, mouseY, 'hit');
     } else {
       spawnRipple(mouseX, mouseY, 'miss');
@@ -78,6 +79,7 @@
   window.addEventListener('mouseup', () => {
     isDown = false;
     frame.classList.remove('cx-hit');
+    dot.classList.remove('cx-hit');
   });
 
   window.addEventListener('mouseleave', () => {

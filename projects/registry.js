@@ -2,7 +2,7 @@ window.PROJECT_REGISTRY = [
   'Weapon System',
   'Movement System',
   //'Orb Rush',
-  //'Pokedex',
+  'Pokedex',
   'Combat System',
   //'Volleyball System',
   'Inventory System'

@@ -10,5 +10,5 @@ window.PROJECT_CONFIGS['Weapon System'] = {
   note: 'Representative excerpt, replace with a real public-safe snippet when publishing the final version.',
   videos: ['https://youtu.be/u_IP6GcqkoE', 'https://youtu.be/MEbXnts_LtQ'],
   images: [],
-  github: '#'
+  github: 'https://github.com/jmnucci-dev/weapon-system-sample'
 };
